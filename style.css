@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 10px;
+    font-family: monospace;
+    font-size: 150%;
+    border-radius: 25px;
+    background-image: url("https://acegif.com/wp-content/gifs/raining-money-38.gif");
+    background-color: #f6f6f6;
+    background-size: 850px;
+
+}
+.container{
+    background-color: #f6f6f6;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 25px;
+    padding: 10px;
+    position: absolute;
+    left: 35%;
+    top: 5px;
+    width: 500px;
+
+}
+.container-2{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+.card{
+    width: 50%;
+    height: 100%;
+}
+.card p{
+    text-align: center;
+}
+.border{
+    height: 65px;
+    border-right: 1px solid #cccccc;
+    align-self: center;
+}
+.center{
+    text-align: center;
+}
+.green{
+    color: #45cb70;
+}
+.red{
+    color: #bf392b;
+}
+input[type=text],input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    outline: none;
+
+}
+input[type=text]:focus,input[type=number]:focus {
+    border: 3px solid blue;
+}
+
+
+.btn {
+    width: 100%;
+    background-color: #9b87fe;
+    font-size: 18px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 2s ease-out 100ms,font-weight 0.2s ease-in-out 100ms;
+
+}
+.btn:hover {
+    background-color: #8f46fc;
+    font-weight: bold;
+}
+
+hr{
+    border-top: 1px solid #d8d8d8;
+}
+.error{
+    color: red;
+    font-size: 16px;
+    text-align: center;
+}
+.error-style{
+    border: 2px solid #e35050;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding:10px;
+    border-radius: 25px;
+
+}
+.fade-in-text {
+    display: inline-block;
+    animation: fadeIn linear 7s;
+    -webkit-animation: fadeIn linear 7s;
+    -moz-animation: fadeIn linear 7s;
+    -o-animation: fadeIn linear 7s;
+    -ms-animation: fadeIn linear 7s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes fadeIn {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+
+
+.minus:hover{
+    width: 50%;
+    background-color: rgb(239, 206, 180);
+    cursor: pointer;
+
+}
+
+.plus:hover {
+    width: 50%;
+    background-color: rgb(181, 232, 175);
+    cursor: pointer;
+}
+.header {
+    width: 100%;
+    font-size: 21px;
+    border: 2px solid blue;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 14px 20px;
+    border-radius: 25px;
+    text-align: center;
+    font-family: Arial;
+}
+.delete-btn{
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 2px 5px;
+    margin: 2px;
+
+}
+.delete-btn:hover{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.sign-btn{
+    border-radius: 50%;
+    border: 1px solid #ffd808;
+    padding: 2px 5px;
+    margin: 2px;
+}
+
+.list{
+    list-style-type: none;
+    padding-left: 5px;
+    padding-top: 5px;
+
+}
+.tooltip {
+    position: relative;
+    font-family: monospace, Montserrat, sans-serif;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 125px;
+    background-color: cornflowerblue;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
+
+.tooltiptext{
+    font-weight: bold;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+th {
+    background-color: #f3950f;
+    color: white;
+}
+
+td, th {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+tr:nth-child(even) td{
+    background-color: #cba48b;
+
+}
+tr:nth-child(odd) td{
+    background-color: #f1c9a4;
+}
+.hide{
+    visibility: collapse;
+}
+.show{
+    visibility: visible;
+}
+.scroll{
+    overflow-y:auto;
+    max-height: 200px;
+}
+.balance {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 25px;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 20px;
+
+}
+#balance{
+    color: #8f46fc;
+}
+
+
+

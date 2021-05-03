@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <p id="error_msg" class="error"></p>
+    <h1 class="center">Expense Tracker</h1>
+    <div class="balance">
+        <h3>YOUR BALANCE <br>
+            <span id="balance">$0.00</span>
+        </h3>
+    </div>
+    <div class="container-2">
+        <div class="card ">
+            <p>INCOME</p>
+            <p class="green" id="income">$0.00</p>
+        </div>
+        <span class="border"></span>
+        <div class="card">
+            <p>EXPENSE</p>
+            <p class="red" id="expense">$0.00</p>
+        </div>
+    </div>
+    <div>
+        <p class="tooltip center">History
+            <sub class="tooltiptext"><span class="sign-btn">+</span>=> income<br><br>
+                <span class="sign-btn">-</span>=> expense</sub>
+        </p>
+        <div class="scroll">
+            <table class="hide" id="table">
+                <thead>
+                <tr>
+                    <th>Delete</th>
+                    <th>Transaction Name</th>
+                    <th>+/-</th>
+                    <th>Amount</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <p class="header">New Transaction</p>
+        <form id="form">
+            <label for="text" >Transaction Name</label><br>
+            <input type="text" id="text"
+                   onfocus="this.value=''"
+                   placeholder="Enter Transaction Name..."
+            ><br>
+            <label for="amount" >Amount <br><sub>
+                (<span class="green">positive=> income </span>,
+                <span class="red">negative=> expense</span> )</sub></label><br>
+            <input type="number" id="amount"
+                   id="amount"
+                   onfocus="this.value=''"
+                   placeholder="Enter Transaction Value..."
+            ><br>
+
+            <button class="btn" onclick="transactions()">Add transaction</button>
+        </form>
+    </div>
+
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
